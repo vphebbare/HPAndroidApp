@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Hind Polymers</string>
+
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Company</item>
+        <item>Gallery</item>
+        <item>User Corner</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+    </string-array>
+
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="company">Company</string>
+    <string name="gallery">Gallery</string>
+    <string name="user_corner">User Corner</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

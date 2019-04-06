@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:text="Hind Polymers was founded by a group of engineers who wanted to share their combined creative work and experience in diversified fields. Our management team can help your business right from providing shrink packaging solutions for products / prototypes / samples to providing assistance for equipment and tools for your shrink applications. Contact us today and let Hind Polymers be your shrink packaging partner!" />
+
+</FrameLayout>
