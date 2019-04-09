@@ -3,18 +3,48 @@
 
 
     <string-array name="navigation_drawer_items_array">
+        <item>Hind Polymers</item>
         <item>Company</item>
         <item>Gallery</item>
         <item>User Corner</item>
         <item>About Us</item>
         <item>Contact Us</item>
     </string-array>
-
+    <string name="home">Home</string>
     <string name="contact_us">Contact Us</string>
     <string name="about_us">About Us</string>
     <string name="company">Company</string>
     <string name="gallery">Gallery</string>
     <string name="user_corner">User Corner</string>
+
+    <string name="busbar">Bus Bar Sleeves</string>
+    <string name="capacitor">Capacitor Sleeves</string>
+    <string name="gas_valve">Gas Valve Sleeves</string>
+    <string name="handle_rod">Handle Rod Sleeves</string>
+    <string name="shrink_pouches">Shrink Pouches</string>
+    <string name="shrink_rolls">Shrink rolls</string>
+    <string name="battery_sleeves">Battery Sleeves</string>
+    <string name="tamper_evident">Tamper Evident Sleeves</string>
+    <string name="busbar_desc">Hind Polymers busbar sleeves are free of Lead, Cadmium, Mercury, Hexavalent Chromium, Polybrominated biphenyl, Polybrominated diphenyl ethers and comply with Restriction of Hazardous Substances (RoHS) specifications as per RoHS2 Directive 2011/65/EU certified by Centre for Materials for Electronics Technology (C-MET).
+
+Hind Polymers busbar shrink sleeves are flexible and flame retardant Polyvinyl Chloride tubing used for electrical insulation and offers excellent mechanical strength, chemical resistance and heat dissipation properties for control panel boards, switch-gears, distribution boards, etc. The busbar sleeves are designed for insulating copper, brass and aluminium busbars (rectangular, square and round). We supply busbar grade shrink sleeves in various sizes and different colors which not only helps in protecting the busbars but also for easy identification</string>
+    <string name="capacitor_desc">Hind Polymers capacitor sleeves are free of Lead, Cadmium, Mercury, Hexavalent Chromium, Polybrominated biphenyl, Polybrominated diphenyl ethers and comply with Restriction of Hazardous Substances (RoHS) specifications as per RoHS2 Directive 2011/65/EU certified by Centre for Materials for Electronics Technology (C-MET).
+
+Hind Polymers capacitor sleeves are used externally and offer excellent insulation and impact resistance. The sleeves are cost-effective and provide an attractive and clean appearance to the capacitors. We supply capacitor grade shrink sleeves in variety of colors, different sizes and are available in roll form as well as in singles.</string>
+    <string name="gas_valve_desc">Gas valve heat shrink sleeves are used as tamper seal for cylinder valves. We manufacture gas valve heat shrink sleeve in a variety of colors (red, blue, yellow, green, black or any other custom color) in roll form for high-speed machine applications, singles / flat cut bands (clear and printed) for manual operations</string>
+
+    <string name="handle_rod_desc">Hind Polymers handle rod shrink sleeves are used for covering handle rods / pipes / sticks of floor mops, wipers, twist mops, squeeze sponge mops, micro fibre mops, wooden broom sticks, rubber cup plungers, toilet plungers, drain plungers, cob web removers and are available in various sizes and colours</string>
+    <string name="shrink_pouches_desc">Heat shrink pouches fit all shaped products and are optimal when the products are of standard and non standard dimensions.
+
+Profile / dome / arc shape sealed shrink pouches fit products in all shapes and sizes. Profile cut shrink pouches are optimal when your products are of non standard dimensions.
+
+Straight sealed heat shrink pouches fit products in all shapes and sizes and are optimal when the products are of square, rectangular, cuboid shape</string>
+<string name="shrink_rolls_desc">Heat shrink rolls are used as a packaging solution all around the world for high speed machine applications. We manufacture heat shrink sleeves (transparent, translucent) for everything from wrapping food products to bundling hardware making production more efficient and streamlined. We manufacture heat shrink sleeves in roll form for high speed machine applications, singles / flat cut bands (clear and printed) for manual operations</string>
+    <string name="battery_sleeves_desc">Hind Polymers battery sleeves are free of Lead, Cadmium, Mercury, Hexavalent Chromium, Polybrominated biphenyl, Polybrominated diphenyl ethers and comply with Restriction of Hazardous Substances (RoHS) specifications as per RoHS2 Directive 2011/65/EU certified by Centre for Materials for Electronics Technology (C-MET).
+
+Battery shrink sleeves / wraps are a low cost battery packing material made of PVC that offers excellent insulation and safety against leakages. Hind Polymers battery sleeves can be used internally for making the batteries leak-proof and tamper proof externally. Hind Polymers battery grade sleeves / wraps are available in wide range of colors with good insulation for single, twin and multiple battery packs</string>
+<string name="tamper_evident_desc">Hind Polymers tamper evident shrink sleeve help protect your customers, your brand and your reputation by providing a tight seal over the closure of a bottle or container to ensure the product is not tampered. We provide tamper evident shrink sleeve as neck bands, full body sleeves, Multi-pack/Combo-pack sleeves.</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

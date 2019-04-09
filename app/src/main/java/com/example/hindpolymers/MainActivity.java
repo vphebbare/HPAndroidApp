@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private CharSequence title;
     android.support.v7.app.ActionBarDrawerToggle mDrawerToggle;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,16 +34,15 @@ public class MainActivity extends AppCompatActivity {
         mNavigationDrawerItemTitles= getResources().getStringArray(R.array.navigation_drawer_items_array);
         mDrawerLayout = findViewById(R.id.drawer_layout);
         mDrawerList = findViewById(R.id.left_drawer);
-
         setupToolbar();
 
-        NavigationDrawerDataModel[] drawerItem = new NavigationDrawerDataModel[5];
-
-        drawerItem[0] = new NavigationDrawerDataModel(R.mipmap.ic_gallery, R.string.company);
-        drawerItem[1] = new NavigationDrawerDataModel(R.mipmap.ic_company, R.string.gallery);
-        drawerItem[2] = new NavigationDrawerDataModel(R.mipmap.ic_usercorner, R.string.user_corner);
-        drawerItem[3] = new NavigationDrawerDataModel(R.mipmap.ic_aboutus, R.string.about_us);
-        drawerItem[4] = new NavigationDrawerDataModel(R.mipmap.ic_contactus, R.string.contact_us);
+        NavigationDrawerDataModel[] drawerItem = new NavigationDrawerDataModel[6];
+        drawerItem[0]= new NavigationDrawerDataModel(R.mipmap.ic_home,R.string.home);
+        drawerItem[1] = new NavigationDrawerDataModel(R.mipmap.ic_gallery, R.string.company);
+        drawerItem[2] = new NavigationDrawerDataModel(R.mipmap.ic_company, R.string.gallery);
+        drawerItem[3] = new NavigationDrawerDataModel(R.mipmap.ic_usercorner, R.string.user_corner);
+        drawerItem[4] = new NavigationDrawerDataModel(R.mipmap.ic_aboutus, R.string.about_us);
+        drawerItem[5] = new NavigationDrawerDataModel(R.mipmap.ic_contactus, R.string.contact_us);
 
         //getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -74,19 +74,23 @@ public class MainActivity extends AppCompatActivity {
         Fragment fragment = null;
 
         switch (position) {
+
             case 0:
-                fragment = new CompanyFragment();
+                fragment = new ProductsFragment();
                 break;
             case 1:
-               fragment = new GalleryFragment();
+                fragment = new CompanyFragment();
                 break;
             case 2:
-                fragment = new UserCornerFragment();
+               fragment = new GalleryFragment();
                 break;
             case 3:
-               fragment = new AboutUsFragment();
+                fragment = new UserCornerFragment();
                 break;
             case 4:
+               fragment = new AboutUsFragment();
+                break;
+            case 5:
                fragment = new ContactUsFragment();
                 break;
 

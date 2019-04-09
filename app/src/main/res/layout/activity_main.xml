@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    tools:context=".MainActivity">-->
 <android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
@@ -24,6 +17,8 @@
             android:layout_height="match_parent">
         </FrameLayout>
 
+
+
     </RelativeLayout>
 
 
@@ -32,26 +27,40 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
+
         <LinearLayout
             android:id="@+id/container_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/AppTheme">
 
             <include
                 android:id="@+id/toolbar"
                 layout="@layout/toolbar" />
+
+            </android.support.design.widget.AppBarLayout>
+
         </LinearLayout>
 
 
-        <FrameLayout
+
+
+       <!-- <FrameLayout
             android:layout_marginTop="?attr/actionBarSize"
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
+            />-->
 
     </LinearLayout>
+
+
 
     <ListView
         android:id="@+id/left_drawer"
@@ -64,15 +73,6 @@
         android:dividerHeight="1dp" />
 
 </android.support.v4.widget.DrawerLayout>
-
-
-
-
-
-
-
-
-<!--</RelativeLayout>-->
 
 
 
