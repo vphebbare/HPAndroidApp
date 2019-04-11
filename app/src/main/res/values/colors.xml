@@ -4,4 +4,7 @@
     <!--<color name="colorPrimaryDark">#087CB2</color>-->
     <color name="colorPrimaryDark">#37B9D3</color>
     <color name="colorAccent">#37B9D3</color>
+    <color name="colorGrey">#F1F1F1</color>
+    <color name="colorNormalText">#333333</color>
+    <color name="colorHeaderText">#37b9d3</color>
 </resources>

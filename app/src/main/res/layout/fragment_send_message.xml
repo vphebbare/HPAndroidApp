@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendMessageFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            tools:context=".SendMessageFragment">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Label -->
+                <TextView
+                    style="@style/TextviewHeaderStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your details" />
+                <!-- Input fields -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <!-- Book title field -->
+                    <EditText
+                        android:id="@+id/edit_book_title"
+                        style="@style/EditorFieldStyle"
+                        android:hint="Name"
+                        android:inputType="textCapWords"
+
+                        android:maxLength="30"
+                        tools:text="@tools:sample/full_names" />
+
+                    <!-- Price field -->
+                    <EditText
+                        android:id="@+id/edit_book_price"
+                        style="@style/EditorFieldStyle"
+                        android:hint="Phone No"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/edit_message"
+                        style="@style/EditorFieldStyle"
+                        android:hint="Your message"
+                        android:inputType="textMultiLine"
+
+                        android:maxLength="200" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_senMessage"
+                android:text="@string/send_message"
+                style="@style/ButtonFieldStyle"
+
+                 />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>

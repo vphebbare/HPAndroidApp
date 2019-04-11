@@ -18,9 +18,7 @@ import static java.lang.Integer.getInteger;
 
 public class ProductDetailsFragment extends Fragment {
 
-    Toolbar toolbar;
-    ImageView product;
-    TextView description;
+
 
 
     public ProductDetailsFragment() {
@@ -34,10 +32,13 @@ public class ProductDetailsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_product_details, container, false);
-        toolbar = view.findViewById(R.id.toolbar);
-        product = view.findViewById(R.id.ivImage);
-        description = view.findViewById(R.id.tvDescription);
+        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        ImageView productImageView = view.findViewById(R.id.ivImage);
+        TextView productNameTextView = view.findViewById(R.id.tvProductName);
+        TextView descriptionTextView = view.findViewById(R.id.tvDescription);
+
         String title = getArguments().getString("Title");
+
         int image = 0;
         //String desc = getArguments().getString("Description");
         /*if (getArguments().getString("image") != null){
@@ -54,8 +55,9 @@ public class ProductDetailsFragment extends Fragment {
                 }
             }
 
-            product.setImageResource(getArguments().getInt("image"));
-            ((TextView)description).setText(getArguments().getString("Description"));
+            productImageView.setImageResource(getArguments().getInt("image"));
+            productNameTextView.setText(getArguments().getString("Title"));
+            descriptionTextView.setText(getArguments().getString("Description"));
 
         }
         return view;

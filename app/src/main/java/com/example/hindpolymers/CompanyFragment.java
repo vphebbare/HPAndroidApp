@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.webkit.WebView;
 
 
 public class CompanyFragment extends Fragment {
@@ -31,7 +31,18 @@ public class CompanyFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         //Log.v("Inside","Inside oncreateView");
-        return inflater.inflate(R.layout.fragment_company, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_company, container, false);
+        WebView webView = view.findViewById(R.id.textContent);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setBackgroundColor(getResources().getColor(R.color.colorGrey));
+        String text;
+        text = "<html><body><p align=\"justify\">";
+        text+= getString(R.string.company_text);
+        text+= "</p></body></html>";
+        webView.loadData(text, "text/html", "utf-8");
+        Log.v("html",text);
+        return view;
 
     }
 

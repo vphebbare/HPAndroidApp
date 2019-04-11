@@ -3,12 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@drawable/hp_bg_3"
+    android:orientation="vertical"
     tools:context=".AboutUsFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <WebView
+        style="@style/WebviewStyle"
+        android:id="@+id/wv_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 </FrameLayout>

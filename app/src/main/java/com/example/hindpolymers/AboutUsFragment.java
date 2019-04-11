@@ -7,16 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link AboutUsFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link AboutUsFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class AboutUsFragment extends Fragment {
 
 
@@ -31,7 +24,19 @@ public class AboutUsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_about_us, container, false);
+        View view = inflater.inflate(R.layout.fragment_about_us, container, false);
+        WebView webView = view.findViewById(R.id.wv_about_us);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setBackgroundColor(getResources().getColor(R.color.colorGrey));
+        String text;
+        text = "<html><body><p align=\"justify\">";
+        text+= getString(R.string.aboutus_html_text);
+        text+= "</p></body></html>";
+        webView.loadData(text, "text/html", "utf-8");
+
+
+
+        return view;
     }
 
 
