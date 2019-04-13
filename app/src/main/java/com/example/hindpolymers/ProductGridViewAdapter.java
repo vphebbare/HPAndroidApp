@@ -46,7 +46,7 @@ public class ProductGridViewAdapter  extends RecyclerView.Adapter<ViewHolder> {
                 fragment.setArguments(args);
 
                 FragmentManager manager = ((AppCompatActivity)context).getSupportFragmentManager();
-                manager.beginTransaction().replace(R.id.fragment_placeholder, fragment).commit();
+                manager.beginTransaction().replace(R.id.fragment_placeholder, fragment).addToBackStack(null).commit();
                 /*Intent mIntent = new Intent(context, ProductDetailsFragment.class);
                 mIntent.putExtra("Title", productList.get(holder.getAdapterPosition()).getProductName());
                 mIntent.putExtra("Description", productList.get(holder.getAdapterPosition()).getProductDescription());

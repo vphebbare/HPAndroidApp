@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
 
         Fragment fm = new ProductsFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, fm).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, fm).addToBackStack(null).commit();
 
 
         fabMail = findViewById(R.id.fab_mail);
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Fragment f = new SendMessageFragment();
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, f).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, f).addToBackStack(null).commit();
 
 
             }
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Insert the fragment by replacing any existing fragment
                 FragmentManager fragmentManager = getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.fragment_placeholder, fragment).commit();
+                fragmentManager.beginTransaction().replace(R.id.fragment_placeholder, fragment).addToBackStack(null).commit();
 
                 // Highlight the selected item has been done by NavigationView
 

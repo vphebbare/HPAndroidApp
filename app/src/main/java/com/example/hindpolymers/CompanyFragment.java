@@ -36,12 +36,13 @@ public class CompanyFragment extends Fragment {
         WebView webView = view.findViewById(R.id.textContent);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setBackgroundColor(getResources().getColor(R.color.colorGrey));
-        String text;
+        /*String text;
         text = "<html><body><p align=\"justify\">";
         text+= getString(R.string.company_text);
         text+= "</p></body></html>";
         webView.loadData(text, "text/html", "utf-8");
-        Log.v("html",text);
+        Log.v("html",text);*/
+        webView.loadUrl("file:///android_asset/company.html");
         return view;
 
     }

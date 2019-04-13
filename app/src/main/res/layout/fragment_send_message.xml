@@ -33,23 +33,28 @@
 
                     <!-- Book title field -->
                     <EditText
-                        android:id="@+id/edit_book_title"
+                        android:id="@+id/et_name"
                         style="@style/EditorFieldStyle"
                         android:hint="Name"
-                        android:inputType="textCapWords"
-
+                        android:inputType=""
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:maxLines="1"
                         android:maxLength="30"
                         tools:text="@tools:sample/full_names" />
 
                     <!-- Price field -->
                     <EditText
-                        android:id="@+id/edit_book_price"
+                        android:id="@+id/et_phoneno"
                         style="@style/EditorFieldStyle"
                         android:hint="Phone No"
+
+                        android:maxLength="10"
+                        android:maxLines="1"
+
                         android:inputType="number" />
 
                     <EditText
-                        android:id="@+id/edit_message"
+                        android:id="@+id/et_message"
                         style="@style/EditorFieldStyle"
                         android:hint="Your message"
                         android:inputType="textMultiLine"
@@ -65,16 +70,4 @@
 
                  />
         </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
 </FrameLayout>

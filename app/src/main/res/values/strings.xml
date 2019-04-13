@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Hind Polymers</string>
-
-
     <string-array name="navigation_drawer_items_array">
         <item>Hind Polymers</item>
         <item>Company</item>
@@ -18,14 +16,16 @@
     <string name="user_corner">User Corner</string>
     <string name="products">Products</string>
     <string name="send_message">Send Message</string>
-    <string name="busbar">Bus Bar Sleeves</string>
+    <string name="busbar">Busbar Sleeves</string>
     <string name="capacitor">Capacitor Sleeves</string>
     <string name="gas_valve">Gas Valve Sleeves</string>
     <string name="handle_rod">Handle Rod Sleeves</string>
     <string name="shrink_pouches">Shrink Pouches</string>
-    <string name="shrink_rolls">Shrink rolls</string>
+    <string name="shrink_rolls">Shrink Rolls</string>
     <string name="battery_sleeves">Battery Sleeves</string>
     <string name="tamper_evident">Tamper Evident Sleeves</string>
+    <string name="thankyou_message">Thank you for your message, we will get back to you soon</string>
+    <string name="please_enter">Please enter all the information</string>
     <string name="busbar_desc">Hind Polymers busbar sleeves are free of Lead, Cadmium, Mercury, Hexavalent Chromium, Polybrominated biphenyl, Polybrominated diphenyl ethers and comply with Restriction of Hazardous Substances (RoHS) specifications as per RoHS2 Directive 2011/65/EU certified by Centre for Materials for Electronics Technology (C-MET).
 
 Hind Polymers busbar shrink sleeves are flexible and flame retardant Polyvinyl Chloride tubing used for electrical insulation and offers excellent mechanical strength, chemical resistance and heat dissipation properties for control panel boards, switch-gears, distribution boards, etc. The busbar sleeves are designed for insulating copper, brass and aluminium busbars (rectangular, square and round). We supply busbar grade shrink sleeves in various sizes and different colors which not only helps in protecting the busbars but also for easy identification</string>
