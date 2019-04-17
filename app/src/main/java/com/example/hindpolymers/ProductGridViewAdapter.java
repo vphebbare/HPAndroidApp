@@ -34,6 +34,7 @@ public class ProductGridViewAdapter  extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.image.setImageResource(productList.get(position).getProdcutImage());
+
         holder.title.setText(productList.get(position).getProductName());
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +65,7 @@ public class ProductGridViewAdapter  extends RecyclerView.Adapter<ViewHolder> {
 
 class ViewHolder extends RecyclerView.ViewHolder {
 
-    ImageView image;
+    ImageView image, galleryImageView;
     TextView title;
     CardView cardView;
 
@@ -74,6 +75,7 @@ class ViewHolder extends RecyclerView.ViewHolder {
         image = itemView.findViewById(R.id.ivImage);
         title = itemView.findViewById(R.id.tvTitle);
         cardView = itemView.findViewById(R.id.cardview);
+        galleryImageView = itemView.findViewById(R.id.gallery_ImageView);
     }
 
 }

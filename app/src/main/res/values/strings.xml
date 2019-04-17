@@ -8,6 +8,42 @@
         <item>About Us</item>
         <item>Contact Us</item>
     </string-array>
+    <string-array name="gallery_images_array">
+        <item>@drawable/gallery_hp_battery_cut_shrink_sleeve_2</item>
+        <item>@drawable/gallery_hp_battery_grade_shrink_sleeve_1</item>
+        <item>@drawable/gallery_hp_battery_grade_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_busbar_grade_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_busbar_grade_shrink_sleeve_1</item>
+        <item>@drawable/gallery_hp_busbar_grade_shrink_sleeve_2</item>
+        <item>@drawable/gallery_hp_capacitor_grade_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_capacitor_grade_shrink_sleeve_1</item>
+        <item>@drawable/gallery_hp_capacitor_grade_shrink_sleeve_2</item>
+        <item>@drawable/gallery_hp_cob_web_remover_handle_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_combo_pack_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_full_body_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_full_body_shrink_sleeve_1</item>
+        <item>@drawable/gallery_hp_gas_valve_shrink_sleeves_1</item>
+        <item>@drawable/gallery_hp_gas_valve_shrink_sleeves_2</item>
+        <item>@drawable/gallery_hp_micro_fiber_mop_handle_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_capacitor_grade_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_capacitor_grade_shrink_sleeve_1</item>
+        <item>@drawable/gallery_hp_capacitor_grade_shrink_sleeve_2</item>
+        <item>@drawable/gallery_hp_micro_fiber_mop_handle_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_mop_handle_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_multipack_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_plunger_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_profile_cut_shrink_pouch</item>
+        <item>@drawable/gallery_hp_profilecut_shrink_pouce_application</item>
+        <item>@drawable/gallery_hp_promotional_pack_shrink_sleeve</item>
+        <item>@drawable/gallery_hp_straight_cut_shrink_pouches</item>
+        <item>@drawable/gallery_hp_tamper_evident_head_band</item>
+        <item>@drawable/gallery_hp_tranperant_shrink_rolls</item>
+        <item>@drawable/gallery_hp_transculent_shrink_rolls</item>
+        <item>@drawable/gallery_hp_transperant_shrink_roll_application</item>
+        <item>@drawable/gallery_hp_twist_mop_handle_shrink_sleeves</item>
+        <item>@drawable/gallery_hp_wiper_rod_shrink_sleeve</item>
+    </string-array>
+
     <string name="home">Home</string>
     <string name="contact_us">Contact Us</string>
     <string name="about_us">About Us</string>

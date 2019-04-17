@@ -12,8 +12,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
     <!-- TODO: Update blank fragment layout -->
-
-
     <WebView
         style="@style/WebviewStyle"
         android:id="@+id/wv_about_us"
