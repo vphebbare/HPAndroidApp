@@ -37,7 +37,7 @@ public class GalleryFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_products, container, false);
         recyclerView = view.findViewById(R.id.recyclerview);
-        GridLayoutManager mGridLayoutManager = new GridLayoutManager(getContext(),2);
+        GridLayoutManager mGridLayoutManager = new GridLayoutManager(getContext(),3);
         recyclerView.setLayoutManager(mGridLayoutManager);
 
         imageResIdStringArray = getResources().getStringArray(R.array.gallery_images_array);

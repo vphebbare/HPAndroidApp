@@ -60,6 +60,10 @@
     <string name="shrink_rolls">Shrink Rolls</string>
     <string name="battery_sleeves">Battery Sleeves</string>
     <string name="tamper_evident">Tamper Evident Sleeves</string>
+    <string name="product_catalogue">Product Catalogue</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="app_name_with_index">Hind Polymers (%1$d/%2$d)</string>
     <string name="thankyou_message">Thank you for your message, we will get back to you soon</string>
     <string name="please_enter">Please enter all the information</string>
     <string name="busbar_desc">Hind Polymers busbar sleeves are free of Lead, Cadmium, Mercury, Hexavalent Chromium, Polybrominated biphenyl, Polybrominated diphenyl ethers and comply with Restriction of Hazardous Substances (RoHS) specifications as per RoHS2 Directive 2011/65/EU certified by Centre for Materials for Electronics Technology (C-MET).

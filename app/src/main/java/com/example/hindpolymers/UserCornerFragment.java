@@ -4,20 +4,14 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link UserCornerFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link UserCornerFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class UserCornerFragment extends Fragment {
 
 
@@ -33,7 +27,17 @@ public class UserCornerFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_user_corner, container, false);
         TextView textView = view.findViewById(R.id.tv_usercorner);
-        textView.setText(getString(R.string.user_corner_text));
+        textView.setText(getString(R.string.product_catalogue));
+
+        CardView cardView = view.findViewById(R.id.cardview_pdf);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new PDFViewerFragment();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, fragment,getString(R.string.product_catalogue)).addToBackStack(null).commit();
+            }
+        });
+
         return view;
     }
 
