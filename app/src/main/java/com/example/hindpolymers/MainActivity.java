@@ -1,5 +1,6 @@
 package com.example.hindpolymers;
 
+import android.content.DialogInterface;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -9,6 +10,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private FloatingActionButton fabMail;
     android.support.v7.app.ActionBarDrawerToggle drawerToggle;
-
+    Fragment fragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,16 +45,16 @@ public class MainActivity extends AppCompatActivity {
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
 
-        Fragment fm = new ProductsFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, fm).addToBackStack(null).commit();
+        Fragment fragment = new ProductsFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, fragment,null).commit();
 
 
         fabMail = findViewById(R.id.fab_mail);
         fabMail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment f = new SendMessageFragment();
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, f).addToBackStack(null).commit();
+                Fragment fragment = new SendMessageFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, fragment,null).addToBackStack(null).commit();
 
 
             }
@@ -69,35 +71,48 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 Fragment fragment;
-                Log.v ("abcde","abcde");
                 switch (menuItem.getItemId()) {
                     case R.id.nav_home_fragment:
                         menuItem.setChecked(true);
                         fragment = new ProductsFragment();
+                        FragmentManager fragmentManager = getSupportFragmentManager();
+                        fragmentManager.beginTransaction().replace(R.id.fragment_placeholder, fragment).addToBackStack(null).commit();
                         break;
                     case R.id.nav_company_fragment:
                         menuItem.setChecked(true);
                         fragment = new CompanyFragment();
+                        FragmentManager fragmentManager1 = getSupportFragmentManager();
+                        fragmentManager1.beginTransaction().replace(R.id.fragment_placeholder, fragment).addToBackStack(null).commit();
                         break;
                     case R.id.nav_gallery_fragment:
                         menuItem.setChecked(true);
                         fragment = new GalleryFragment();
+                        FragmentManager fragmentManager2 = getSupportFragmentManager();
+                        fragmentManager2.beginTransaction().replace(R.id.fragment_placeholder, fragment).addToBackStack(null).commit();
                         break;
                     case R.id.nav_products_fragment:
                         menuItem.setChecked(true);
                         fragment = new ProductsFragment();
+                        FragmentManager fragmentManager3 = getSupportFragmentManager();
+                        fragmentManager3.beginTransaction().replace(R.id.fragment_placeholder, fragment).commit();
                         break;
                     case R.id.nav_usercorner_fragment:
                         menuItem.setChecked(true);
                         fragment = new UserCornerFragment();
+                        FragmentManager fragmentManager4 = getSupportFragmentManager();
+                        fragmentManager4.beginTransaction().replace(R.id.fragment_placeholder, fragment).addToBackStack(null).commit();
                         break;
                     case R.id.nav_aboutus_fragment:
                         menuItem.setChecked(true);
                         fragment = new AboutUsFragment();
+                        FragmentManager fragmentManager5 = getSupportFragmentManager();
+                        fragmentManager5.beginTransaction().replace(R.id.fragment_placeholder, fragment).addToBackStack(null).commit();
                         break;
                     case R.id.nav_contactus_fragment:
                         menuItem.setChecked(true);
                         fragment = new ContactUsFragment();
+                        FragmentManager fragmentManager6 = getSupportFragmentManager();
+                        fragmentManager6.beginTransaction().replace(R.id.fragment_placeholder, fragment).addToBackStack(null).commit();
                         break;
                     default:
                         fragment = new ProductsFragment();
@@ -105,8 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 // Insert the fragment by replacing any existing fragment
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.fragment_placeholder, fragment).addToBackStack(null).commit();
+
 
                 // Highlight the selected item has been done by NavigationView
 
@@ -163,12 +177,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
+
+
     }
 
 

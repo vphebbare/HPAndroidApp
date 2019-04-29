@@ -118,14 +118,13 @@ public class SendMessageFragment extends Fragment {
                     String textMsg = "Name: " + nameEditText.getText() ;
                     textMsg += "\n" + "Phone No: " + phonenoEditText.getText();
                     textMsg += "\n" + "Message: " + msgEditText.getText();
-                    String toNumber = "918792808582"; // Replace with mobile phone number without +Sign or leading zeros, but with country code
+                    String toNumber = "918792808582,919866140095"; // Replace with mobile phone number without +Sign or leading zeros, but with country code
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=" + toNumber + "&text=" + textMsg));
                     startActivity(intent);
 
                     Toast toast = Toast.makeText(getContext(), getString(R.string.thankyou_message), Toast.LENGTH_LONG);
                     toast.show();
-
                     nameEditText.setText("");
                     phonenoEditText.setText("");
                     msgEditText.setText("");

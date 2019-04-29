@@ -26,17 +26,31 @@ public class UserCornerFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_user_corner, container, false);
-        TextView textView = view.findViewById(R.id.tv_usercorner);
-        textView.setText(getString(R.string.product_catalogue));
+        TextView textViewProdCat = view.findViewById(R.id.tv_productCat);
+        textViewProdCat.setText(getString(R.string.product_catalogue));
 
-        CardView cardView = view.findViewById(R.id.cardview_pdf);
-        cardView.setOnClickListener(new View.OnClickListener() {
+        CardView cardview_prod_pdf = view.findViewById(R.id.cardview_prod);
+        cardview_prod_pdf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Fragment fragment = new PDFViewerFragment();
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, fragment,getString(R.string.product_catalogue)).addToBackStack(null).commit();
             }
         });
+
+        TextView textViewBbarCat = view.findViewById(R.id.tv_busbarCat);
+        textViewBbarCat.setText(getString(R.string.busbar_catalogue));
+
+        CardView cardview_busbar_pdf = view.findViewById(R.id.cardview_busbar);
+        cardview_busbar_pdf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new PDFViewerFragment();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_placeholder, fragment,getString(R.string.product_catalogue)).addToBackStack(null).commit();
+            }
+        });
+
+
 
         return view;
     }

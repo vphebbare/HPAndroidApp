@@ -61,6 +61,7 @@
     <string name="battery_sleeves">Battery Sleeves</string>
     <string name="tamper_evident">Tamper Evident Sleeves</string>
     <string name="product_catalogue">Product Catalogue</string>
+    <string name="busbar_catalogue">Busbar Catalogue</string>
     <string name="previous">previous</string>
     <string name="next">next</string>
     <string name="app_name_with_index">Hind Polymers (%1$d/%2$d)</string>

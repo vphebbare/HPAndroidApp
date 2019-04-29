@@ -28,12 +28,7 @@ public class AboutUsFragment extends Fragment {
         WebView webView = view.findViewById(R.id.wv_about_us);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setBackgroundColor(getResources().getColor(R.color.colorGrey));
-        String text;
-        text = "<html><body><p align=\"justify\">";
-        text+= getString(R.string.aboutus_html_text);
-        text+= "</p></body></html>";
-        webView.loadData(text, "text/html", "utf-8");
-
+        webView.loadUrl("file:///android_asset/aboutus.html");
 
 
         return view;

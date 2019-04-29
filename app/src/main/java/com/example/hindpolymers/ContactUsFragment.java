@@ -30,7 +30,8 @@ public class ContactUsFragment extends Fragment {
 
             @Override
             public void onClick(View view) {
-                String geoUri = "http://maps.google.co.in/maps?q=loc:" + 17.45725508400875 + "," + 78.4296494567397 + " (" + "Hind Polymers" + ")";
+                String geoUri = "https://www.google.com/maps/place/Hind+Polymers/@17.457298,78.4279463,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb90e2847c9ba9:0x9040e3fb551cdbf8!8m2!3d17.457298!4d78.430135";
+                //String geoUri = "http://maps.google.co.in/maps?q=loc:" + 17.45725508400875 + "," + 78.4296494567397 + " (" + "Hind Polymers" + ")";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
                 startActivity(intent);
             }
